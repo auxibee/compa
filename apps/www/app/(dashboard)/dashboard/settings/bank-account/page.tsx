@@ -4,11 +4,6 @@ import { Separator } from "@/components/ui/separator";
 
 import { IntegrationForm } from "./integrations-form";
 
-export const metadata = {
-  title: "Bank Account Settings",
-  description: "Bank Accounts settings description",
-};
-
 export default async function SettingsProfilePage() {
   const integrations = await api.integrations.listIntegrations.query();
 
